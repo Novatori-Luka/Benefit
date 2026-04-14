@@ -3,25 +3,173 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Selection */
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+/* Thin divider utility */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.divider-dark {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Editorial hover underline */
+.underline-reveal {
+  position: relative;
+  display: inline-block;
+}
+.underline-reveal::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.underline-reveal:hover::after {
+  width: 100%;
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Tiptap editor */
+.ProseMirror {
+  outline: none;
+  min-height: 300px;
+  padding: 1rem;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #666;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Loading skeleton shimmer */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #111 25%, #222 50%, #111 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite;
+}
+.skeleton-light {
+  background: linear-gradient(90deg, #e5e5e5 25%, #d0d0d0 50%, #e5e5e5 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Grain noise keyframe */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(20%, 25%); }
+  50% { transform: translate(-25%, 10%); }
+  60% { transform: translate(15%, 5%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(25%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee-slow {
+  animation: marquee 50s linear infinite;
+}
+
+/* Custom cursor */
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  mix-blend-mode: difference;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Admin panel utilities */
+.admin-input {
+  @apply w-full bg-transparent border border-white/20 px-4 py-3 text-white text-sm focus:outline-none focus:border-white/50 placeholder:text-white/20;
+}
+.admin-select {
+  @apply w-full bg-black border border-white/20 px-4 py-3 text-white text-sm focus:outline-none focus:border-white/50;
+}
+.admin-label {
+  @apply text-white/40 text-xs tracking-widest uppercase block mb-2;
+}
+.admin-error {
+  @apply text-red-400 text-xs mt-1;
+}
+.admin-btn {
+  @apply bg-white text-black px-6 py-3 text-xs tracking-widest uppercase hover:bg-white/90 transition-colors disabled:opacity-50;
 }

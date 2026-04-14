@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "magazine": "MAGAZINE",
+    "events": "EVENTS",
+    "digital": "DIGITAL",
+    "blog": "BLOG",
+    "partners": "PARTNERS",
+    "contact": "CONTACT"
+  },
+  "home": {
+    "hero": {
+      "title": "BENEFIT",
+      "subtitle": "Premium Business & Lifestyle Media Platform",
+      "cta_magazine": "Read Magazine",
+      "cta_partner": "Become a Partner"
+    },
+    "marquee": "BUSINESS · FASHION · HOSPITALITY · GASTRONOMY · LIFESTYLE · INFLUENCE · ",
+    "ecosystem": {
+      "title": "THE ECOSYSTEM",
+      "magazine_title": "BENEFIT MAGAZINE",
+      "magazine_desc": "Quarterly print magazine with premium distribution across Georgia's top venues.",
+      "talks_title": "BENEFIT TALKS",
+      "talks_desc": "High-level business events connecting Georgia's most influential leaders.",
+      "digital_title": "DIGITAL & VIDEO",
+      "digital_desc": "Social media campaigns, brand storytelling, and video production."
+    },
+    "distribution": {
+      "title": "WHERE YOU FIND US",
+      "airport": "Airport Taxis",
+      "hotels": "5-Star Hotels",
+      "dining": "Fine Dining",
+      "venues": "Premium Venues"
+    },
+    "latest_issue": {
+      "label": "LATEST ISSUE",
+      "cta": "View Issue"
+    },
+    "stats": {
+      "issues": "Quarterly Issues",
+      "partners": "Partner Brands",
+      "distribution": "Distribution Points",
+      "readers": "Annual Readers"
+    },
+    "featured": {
+      "title": "FEATURED ARTICLES",
+      "cta": "View All Articles"
+    },
+    "partners": {
+      "title": "OUR PARTNERS"
+    },
+    "cta": {
+      "title": "BECOME PART OF THE ECOSYSTEM",
+      "body": "Join Georgia's most influential business and lifestyle platform. Reach premium audiences across print, digital, and live events.",
+      "button": "Apply as Partner"
+    }
+  },
+  "magazine": {
+    "hero_title": "BENEFIT MAGAZINE",
+    "issues_label": "ISSUES PUBLISHED",
+    "filter_all": "ALL",
+    "read": "Read",
+    "download": "Download PDF",
+    "newsletter_title": "STAY INFORMED",
+    "newsletter_sub": "Subscribe to receive each new issue directly to your inbox.",
+    "newsletter_btn": "Subscribe"
+  },
+  "events": {
+    "hero_title": "BENEFIT TALKS",
+    "hero_sub": "High-level conversations shaping Georgia's business landscape.",
+    "upcoming": "UPCOMING EVENTS",
+    "past": "PAST EVENTS",
+    "register": "Register",
+    "partner_cta_title": "BECOME AN EVENT PARTNER",
+    "partner_cta_sub": "Co-create events that reach Georgia's most influential audience.",
+    "modal": {
+      "title": "Event Registration",
+      "name": "Full Name",
+      "company": "Company",
+      "position": "Position",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "event": "Select Event",
+      "submit": "Register Now"
+    }
+  },
+  "digital": {
+    "hero_title": "DIGITAL & VIDEO",
+    "hero_sub": "Campaigns that move, stories that last.",
+    "services": {
+      "social_title": "SOCIAL MEDIA CAMPAIGNS",
+      "social_desc": "Strategic content that amplifies your brand across platforms.",
+      "video_title": "VIDEO PRODUCTION",
+      "video_desc": "Cinematic brand films and editorial video content.",
+      "brand_title": "BRAND STORYTELLING",
+      "brand_desc": "Long-form narratives that build lasting brand equity."
+    },
+    "showreel": "SHOWREEL",
+    "cases": "CASE STUDIES",
+    "cta": "Start a Campaign"
+  },
+  "blog": {
+    "hero_title": "THE JOURNAL",
+    "read_time": "min read",
+    "by": "By",
+    "related": "RELATED ARTICLES",
+    "share": "SHARE",
+    "categories": {
+      "all": "ALL",
+      "business": "BUSINESS",
+      "fashion": "FASHION",
+      "lifestyle": "LIFESTYLE",
+      "hospitality": "HOSPITALITY",
+      "gastronomy": "GASTRONOMY"
+    }
+  },
+  "partners": {
+    "hero_title": "OUR PARTNERS",
+    "hero_sub": "Brands that share our values.",
+    "tiers_title": "PARTNERSHIP TIERS",
+    "tier_print": "PRINT PRESENCE",
+    "tier_event": "EVENT PRESENCE",
+    "tier_full": "FULL ECOSYSTEM",
+    "contact_detail": "Contact for Details",
+    "why_title": "WHY PARTNER WITH US",
+    "form_title": "PARTNER APPLICATION",
+    "form_submit": "Submit Application",
+    "form": {
+      "company": "Company Name",
+      "industry": "Industry",
+      "contact_person": "Contact Person",
+      "email": "Email",
+      "phone": "Phone",
+      "interest": "Partnership Interest",
+      "message": "Message"
+    }
+  },
+  "contact": {
+    "title": "GET IN TOUCH",
+    "address": "Tbilisi, Georgia",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "subjects": {
+        "general": "General Inquiry",
+        "partnership": "Partnership",
+        "advertising": "Advertising",
+        "events": "Events",
+        "other": "Other"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "success_message": "Message sent successfully.",
+    "success_subscribe": "Subscribed successfully.",
+    "success_register": "Registration complete.",
+    "success_apply": "Application submitted.",
+    "read_more": "Read More",
+    "close": "Close",
+    "back": "Back"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "magazine": "Magazine",
+    "blog": "Blog",
+    "events": "Events",
+    "partners": "Partners",
+    "messages": "Messages",
+    "newsletter": "Newsletter",
+    "registrations": "Registrations",
+    "logout": "Log Out"
+  }
+}
